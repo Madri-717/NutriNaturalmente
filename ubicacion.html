@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreMi</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style/styles.css">
+    <script src="js/googlemaps/maps.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <img width="100%" src="images/fondo2.jpg">
+      </div>
+        <header class="container">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!-- Contenido de la primera columna -->
+                <img id="logo" src="images/Logo.JPG">
+              </div>
+              <div class="col-md-8">
+                <!-- Contenido de la segunda columna -->
+                <img id="logo" src="images/Logo2.JPG">
+              </div>
+            </div>
+          </header>
+        
+          <!--MENU-->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sabiasque.html">Sabías que?</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Más Información
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="contacto.html">Contáctenos</a></li>
+                      <li><a class="dropdown-item" href="ubicacion.html">Ubicación</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="autor.html">Autor</a></li>
+                    </ul>
+                  </li>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!--MENU-->
+
+    <!--UBICACION-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <!-- Contenido de la primera columna -->
+          <img id="logo" src="images/Ubicacion.JPG">
+        </div>
+        <div class="col-md-8">
+          <!-- Contenido de la segunda columna -->
+          <div id="map">
+            <gmp-map center="10.003314971923828,-84.21167755126953" zoom="14" map-id="DEMO_MAP_ID">
+              <gmp-advanced-marker position="10.003314971923828,-84.21167755126953" title="NutriNaturalmente"></gmp-advanced-marker>
+            </gmp-map>
+          </div>
+        </div>
+    </div>
+    </div>
+    <!--<div class="container">
+      <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <p class="p-3 fs-5 back text-primary">Distancia desde tu ubicación actual a NutriNaturalmente: <span id="distance"></span></p>
+    </section> 
+    </div> -->  
+
+    
+    <!-- Inicio del footer -->
+    <footer class="container">
+        <div class="row">
+          <!-- Primera fila -->
+          <div class="col">
+            <ul class="list-unstyled d-flex justify-content-center">
+              <!-- Enlaces a redes sociales -->
+              <li class="me-3"><p>Síguenos en:</p></li>
+              <li class="me-3" ><a target="_blank" href="https://www.facebook.com/nutricionNaturalMente?locale=es_LA"><img src="images/facebook.png" width="25" height="25"></a></li>
+              <li class="me-3"><a target="_blank" href="https://www.instagram.com/nutrinaturalmente/"><img src="images/instagram.png" width="25" height="25"></a></li>
+              <!-- Enlace a WhatsApp -->
+              <li class="me-3"><a target="_blank" href="https://api.whatsapp.com/send?phone=50661851543"><img src="images/whatsapp.png" width="25" height="25"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Segunda fila -->
+          <div class="col text-center">
+            <p class="mb-0">NutriNaturalmente. © Todos los derechos reservados 2024.</p>
+            <div id="date">Apr 15, 2024</div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+          </div>
+        </div>
+      </footer>
+<!-- Fin del footer -->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script> 
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbH9xoAiyyU2umg33Qa8q2MT7BSdMZ9sY&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreMi</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <img width="100%" src="images/fondo.jpg">
+      </div>
+        <header class="container">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!-- Contenido de la primera columna -->
+                <img id="logo" src="images/Logo.JPG">
+              </div>
+              <div class="col-md-8">
+                <!-- Contenido de la segunda columna -->
+                <img id="logo" src="images/Logo2.JPG">
+              </div>
+            </div>
+          </header>
+        
+          <!--MENU-->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sabiasque.html">Sabías que?</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Más Información
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="contacto.html">Contáctenos</a></li>
+                      <li><a class="dropdown-item" href="ubicacion.html">Ubicación</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="autor.html">Autor</a></li>
+                    </ul>
+                  </li>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!--MENU-->
+
+        <section class="w-50 mx-auto text-center pt-5" id="intro">
+
+          <h1 class="p-3 fs-2 border-top border-3 border-bottom border-3"> 
+              Formulario de Registro para ser contactado
+            </h1>    
+    
+         </section>
+  
+         <div class="container pb-4">
+          <form id="registroForm" class="mt-4">
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre Completo:</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3">
+                  <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento:</label>
+                  <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+              </div>
+              <div class="mb-3">
+                  <label for="edad" class="form-label">Edad:</label>
+                  <input type="text" class="form-control" id="edad" name="edad" readonly>
+              </div>
+              <input type="hidden" id="edadHidden" name="edad"> <!-- Este campo se completará automáticamente con JavaScript -->
+              <div class="mb-3">
+                <label for="edad" class="form-label">Telefóno:</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" readonly>
+            </div>
+              <div class="mb-3">
+                  <label for="genero" class="form-label">Género:</label>
+                  <select class="form-select" id="genero" name="genero" required>
+                      <option value="masculino">Masculino</option>
+                      <option value="femenino">Femenino</option>
+                      <option value="otro">Otro</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                  <label for="objetivo" class="form-label">Objetivo:</label>
+                  <select class="form-select" id="objetivo" name="obejtivo[]" multiple required>
+                      <option value="uno">Bajar de peso</option>
+                      <option value="dos">Mantenimiento / Estilo de vida</option>
+                      <option value="tres">Subir de peso</option>
+                      <option value="cuatro">Control diabetico</option>
+                      <option value="cinco">Vegano / Vegana</option>
+                  </select>
+              </div>
+              <button type="button" onclick="enviarCorreo()" class="btn btn-primary">Enviar</button>
+          </form>
+      </div>
+
+    <!-- Inicio del footer -->
+    <footer class="container">
+        <div class="row">
+          <!-- Primera fila -->
+          <div class="col">
+            <ul class="list-unstyled d-flex justify-content-center">
+              <!-- Enlaces a redes sociales -->
+              <li class="me-3"><p>Síguenos en:</p></li>
+              <li class="me-3" ><a target="_blank" href="https://www.facebook.com/nutricionNaturalMente?locale=es_LA"><img src="images/facebook.png" width="25" height="25"></a></li>
+              <li class="me-3"><a target="_blank" href="https://www.instagram.com/nutrinaturalmente/"><img src="images/instagram.png" width="25" height="25"></a></li>
+              <!-- Enlace a WhatsApp -->
+              <li class="me-3"><a target="_blank" href="https://api.whatsapp.com/send?phone=50661851543"><img src="images/whatsapp.png" width="25" height="25"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Segunda fila -->
+          <div class="col text-center">
+            <p class="mb-0">NutriNaturalmente. © Todos los derechos reservados 2024.</p>
+            <div id="date">Apr 15, 2024</div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+          </div>
+        </div>
+      </footer>
+<!-- Fin del footer -->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script> 
+    
+   <!--script Jqery-->
+   <script src="js/jquery/jquery-3.7.1.min.js"></script>
+   <script src="js/jquery/dinamics.js"></script>
+</body>
+</html>
