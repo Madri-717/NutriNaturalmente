@@ -88,7 +88,7 @@ gmp-map{
 /*********** Inicio Medias Queris*************/
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  #nurti{
+  #nutri{
     width: 100%; /* Ancho del 100% del contenedor */
     height: auto; /* Altura automática */
     margin: 0; /* Eliminar márgenes */
